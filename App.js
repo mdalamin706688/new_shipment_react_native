@@ -1,20 +1,29 @@
 import React, { useEffect } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Platform, Dimensions } from 'react-native';
+import { StyleSheet, View, Platform } from 'react-native';
 import NewShipmentScreen from './src/screens/NewShipmentScreen';
 
 export default function App() {
   useEffect(() => {
-    if (Platform.OS === 'web') {
-      // Set mobile viewport dimensions
-      const root = document.getElementById('root');
-      if (root) {
-        root.style.maxWidth = '480px';
-        root.style.margin = '0 auto';
+    if (Platform.OS === 'web' && typeof document !== 'undefined') {
+      try {
+        // Set mobile viewport dimensions safely
+        const style = document.createElement('style');
+        style.textContent = `
+          body {
+            max-width: 480px !important;
+            margin: 0 auto !important;
+            background-color: #f5f5f5 !important;
+          }
+          #root {
+            max-width: 480px !important;
+            margin: 0 auto !important;
+          }
+        `;
+        document.head.appendChild(style);
+      } catch (error) {
+        console.error('Error setting mobile styles:', error);
       }
-      document.body.style.maxWidth = '480px';
-      document.body.style.margin = '0 auto';
-      document.body.style.backgroundColor = '#f5f5f5';
     }
   }, []);
 
