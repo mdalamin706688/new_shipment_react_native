@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/new_shipment_react_native/static/js/main.96da4b56.js",
+    "main.js": "/new_shipment_react_native/static/js/main.8d825f99.js",
     "static/js/196.35ff982a.js": "/new_shipment_react_native/static/js/196.35ff982a.js",
     "favicon.ico": "/new_shipment_react_native/favicon.ico",
     "index.html": "/new_shipment_react_native/index.html",
@@ -9,11 +9,11 @@
     "favicon-16.png": "/new_shipment_react_native/favicon-16.png",
     "manifest.json": "/new_shipment_react_native/manifest.json",
     "serve.json": "/new_shipment_react_native/serve.json",
-    "main.96da4b56.js.map": "/new_shipment_react_native/static/js/main.96da4b56.js.map",
+    "main.8d825f99.js.map": "/new_shipment_react_native/static/js/main.8d825f99.js.map",
     "196.35ff982a.js.map": "/new_shipment_react_native/static/js/196.35ff982a.js.map"
   },
   "entrypoints": [
     "static/js/196.35ff982a.js",
-    "static/js/main.96da4b56.js"
+    "static/js/main.8d825f99.js"
   ]
 }
